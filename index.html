@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, intitial -scale=1.0">
+    <title>Hustle Quotes</title>
+      <style>
+        body {
+          font-family: 'Arial', sans-sarif;
+          background: #111;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100vh;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .quote {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          background: #ff9900;
+          color: #000;
+          font-weight: bold;
+          border-radius: 10px;
+          cursor: pointer;
+          font-size: 18px;
+        }
+
+        .footer {
+          margin-top: 30px;
+          font-size: 14px;
+          color: #888;
+        }
+      </style>
+  </head>
+  <body>
+
+    <div class="quote" id="quote">Tap the button for some QUOTES</div>
+    <button onclick="newQuote()">New Quote</button>
+
+    <div class="footer">Site by @lusa_fr on insta | DM for a custom website</div>
+
+    <script>
+      const quotes = [
+        "Grind now, shine later!"
+        "Push yourself, because no one else is going to do it for you."
+        "Success is never owned, it’s rented. And rent is due every day."
+        "Dream big. Start small. Act now."
+        "The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt"
+        "Start where you are. Use what you have. Do what you can. – Arthur Ashe"
+        "You don’t have to be great to start, but you have to start to be great. – Zig Ziglar"
+        "Discipline is choosing between what you want now and what you want most."
+        "Make it happen. Shock everyone."
+        "Fall in love with the process and the results will come."
+        "Comfort is the enemy of progress."
+      ];
+
+      function newQuote() {
+        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById('quote').innerText = quote;
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+  
